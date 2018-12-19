@@ -13,20 +13,20 @@ Tips on all things FE
 
 ### Commands
 
+#### Clone
+`git clone https://github.com/domgaulton/dg-tips.git`
+Clone a repository to your local drive
+
 #### Git Status
 `git status`
-show modified files in working directory, staged for your next commit
-
-#### Clone
-`git clone http....git`
-Clone a repository to your local drive
+shows what has been modified in working directory
 
 #### Add
 `git add [file]` 
-Add file so git tracks it, use * to add all updated files
+Add file or files updates so that git tracks it, use * to add all updated files
 
 #### Commit
-`git commit -m`
+`git commit -m 'lorem ipsum'`
 Commit added files from above and add a commit message
 
 #### Push
