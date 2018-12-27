@@ -40,9 +40,15 @@ shows what has been modified in working directory
 `git add [file]` 
 Add file or files updates so that git tracks it, use `.` to add all updated files
 
+#### Un Add
+`git reset HEAD [file]` 
+Removes (unstages) file
+
+
 #### Commit
-`git commit -m'lorem ipsum'`
+`git commit -m 'lorem ipsum'`
 Commit added files from above and add a commit message
+
 
 #### Push
 `git push`
