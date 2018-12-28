@@ -29,6 +29,19 @@ Tips on all things FE
 
 ## Javascript ES6
 
+#### Const and Let
+`const x =` used when we don't want variable to change (note it can still be added to e.g. in an Array method such as `.push()`)
+`let y =` used when variable might change in new block of code / class / function. Inner Block Scope prevents variable being changed outside of variable and vica versa
+
+#### Backticks
+
+```
+const name = 'Foo';
+const hello = `Hello ${name}`
+console.log(hello);
+// Output = 'Hello Foo'
+```
+
 ## Git
 
 #### Clone
