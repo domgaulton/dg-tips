@@ -8,7 +8,7 @@ Tips on all things FE
 * [Git](#git)
 * [NPM](#npm)
 
-### Terminal Navigation
+## Terminal
 
 #### Create folder
 `mkdir [folder name]` - make directory
@@ -19,7 +19,7 @@ Tips on all things FE
 #### Change Directoy
 `cd [folder]` || `cd ..` - move into another child directory || move up one directory
 
-### Javascript
+## Javascript
 
 #### Terminology
 
@@ -27,9 +27,9 @@ Tips on all things FE
 #### Objects
 #### Arrays
 
-### Javascript ES6
+## Javascript ES6
 
-### Git
+## Git
 
 #### Clone
 `git clone https://github.com/domgaulton/dg-tips.git`
@@ -46,7 +46,6 @@ Add file or files updates so that git tracks it, use `.` to add all updated file
 #### Un Add
 `git reset HEAD [file]` 
 Removes (unstages) file
-
 
 #### Commit
 `git commit -m 'lorem ipsum'`
@@ -72,7 +71,7 @@ fetch and merge any commits from the tracking remote branch
 #### Useful Links
 https://education.github.com/git-cheat-sheet-education.pdf
 
-### NPM
+## NPM
 
 #### Intro
 `npm init` Creates a package.json file in the folder (add `npm init -y` to say Yes to all questions)
