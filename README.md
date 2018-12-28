@@ -29,19 +29,49 @@ Tips on all things FE
 
 ## Javascript ES6
 
-#### Const and Let
+#### Const and Let (block scoping)
 `const x =` used when we don't want variable to change (note it can still be added to e.g. in an Array method such as `.push()`)
 `let y =` used when variable might change in new block of code / class / function. Inner Block Scope prevents variable being changed outside of variable and vica versa
 
-#### Backticks
-
+#### Template Literals (backticks)
+Great for injecting inline
 ```
 const name = 'Foo';
 const hello = `Hello ${name}`
-console.log(hello);
-// Output = 'Hello Foo'
+console.log(hello); // 'Hello Foo'
 ```
 
+#### Spread Operator (...)
+No need to concat anymore...
+```
+let a = [7, 8, 9];
+let b = [6, a..., 10];
+console.log(b); // [6, 7, 8, 9, 10]
+```
+
+Or we can add to an array from comma seperated list...
+```
+function spread(...a) {
+  console.log(a)
+};
+spread(1, 2, 3, 4, 5); // [1, 2, 3, 4, 5]
+```
+```
+function spreadAdd(...b) {
+  let a = [1, 2, 3,...b];
+  return a;
+}
+
+spreadAdd(4, 5, 6); // [1, 2, 3, 4, 5, 6]
+```
+
+### Destructuring
+Used instead of [0], [1] etc
+```
+let items = [1, 2, 3, 4, 5]
+let [a, b] = items;
+console.log(b); // 2
+```
 ## Git
 
 #### Clone
@@ -77,7 +107,7 @@ fetch and merge any commits from the tracking remote branch
 1. Add repo on github
 2. cd to local repo then `git init`
 3. if you want to ignore node_modules (advised) run `touch .gitignore` and github will add a decent gitnore file
-4. follow `git add [file]` below until `git commit`
+4. follow instructions from `git add [file]` until `git commit`
 5. `git remote add origin [url]` add git remote to project
 6. `git push -u origin master` push it to master branch
 
