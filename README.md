@@ -1,32 +1,35 @@
 # dg-tips
 Tips on all things FE
 
-## Terminal
+## Table of Contents
+* [Terminal](#terminal)
+* [Javascript](#javascript)
+* [Javascript ES6](#javascript-es6)
+* [Git](#git)
+* [NPM](#npm)
+
+### Terminal Navigation
 
 #### Create folder
-
+`mkdir [folder name]` - make directory
 
 #### Create file
+`touch [filename.filetype]` - create file
 
-## Javascript
+#### Change Directoy
+`cd [folder]` || `cd ..` - move into another child directory || move up one directory
 
-### Terminology
+### Javascript
+
+#### Terminology
 
 #### Functions
 #### Objects
 #### Arrays
 
-## Git
+### Javascript ES6
 
-### Commands
-
-#### Add local repo to github
-1. Add repo on github
-2. cd to local repo then `git init`
-3. if you want to ignore node_modules (advised) run `touch .gitignore` and github will add a decent gitnore file
-4. follow `git add [file]` below until `git commit`
-5. `git remote add origin [url]` add git remote to project
-6. `git push -u origin master` push it to master branch
+### Git
 
 #### Clone
 `git clone https://github.com/domgaulton/dg-tips.git`
@@ -58,16 +61,24 @@ Push committed files to the branch you're on
 `git pull`
 fetch and merge any commits from the tracking remote branch
 
+#### Add local repo to github
+1. Add repo on github
+2. cd to local repo then `git init`
+3. if you want to ignore node_modules (advised) run `touch .gitignore` and github will add a decent gitnore file
+4. follow `git add [file]` below until `git commit`
+5. `git remote add origin [url]` add git remote to project
+6. `git push -u origin master` push it to master branch
+
 #### Useful Links
 https://education.github.com/git-cheat-sheet-education.pdf
 
-## NPM
+### NPM
 
-### Intro
+#### Intro
 `npm init` Creates a package.json file in the folder (add `npm init -y` to say Yes to all questions)
 
-### Install from package.json
+#### Install from package.json
 `npm install` runs package.json 
 
-### Dev dependencies
+#### Dev dependencies
 `-dev` Installs only in development mode
