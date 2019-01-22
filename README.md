@@ -7,6 +7,7 @@ Tips on all things FE
 * [Javascript ES6](#javascript-es6)
 * [Git](#git)
 * [NPM](#npm)
+* [CSS](#css)
 
 ## Terminal
 
@@ -21,6 +22,16 @@ Tips on all things FE
 
 ## Javascript
 
+#### Get Elements
+`document.querySelector('# or .')` - The Document method querySelector() returns the first Element
+
+`document.querySelectorAll('# or .')` - returns a static (not live) NodeList
+
+#### Element Attributes
+`element.attributes` - List of all element details! Very useful
+
+
+
 #### Terminology
 
 #### Functions
@@ -28,6 +39,8 @@ Tips on all things FE
 #### Arrays
 
 ## Javascript ES6
+
+### Arrow Functions
 
 #### Const and Let (block scoping)
 `const x =` used when we don't want variable to change (note it can still be added to e.g. in an Array method such as `.push()`)
@@ -72,6 +85,17 @@ let items = [1, 2, 3, 4, 5]
 let [a, b] = items;
 console.log(b); // 2
 ```
+
+Destructure Object (old and new below)
+```
+let wizard = {magical: true, power: 10}
+// let magical = wizard.magical;
+// let power = wizard.power;
+let { magical, power } = wizard;
+console.log(magical, power) // true 10
+```
+
+
 ## Git
 
 #### Clone
@@ -94,14 +118,17 @@ Removes (unstages) file
 `git commit -m 'lorem ipsum'`
 Commit added files from above and add a commit message
 
-
 #### Push
-`git push`
-Push committed files to the branch you're on
+`git push {origin} {branch name}`
+Push committed files to repo where {origin} and {branch} are optional. Defaults to origin and master
 
 #### Pull
 `git pull`
 fetch and merge any commits from the tracking remote branch
+
+#### Checkout New Branch
+`git checkout -b [branch name]`
+create new branch on repository
 
 #### Add local repo to github
 1. Add repo on github
@@ -113,6 +140,7 @@ fetch and merge any commits from the tracking remote branch
 
 #### Useful Links
 https://education.github.com/git-cheat-sheet-education.pdf
+http://makeapullrequest.com/
 
 ## NPM
 
@@ -124,3 +152,12 @@ https://education.github.com/git-cheat-sheet-education.pdf
 
 #### Dev dependencies
 `-dev` Installs only in development mode
+
+## CSS
+
+#### CSS Grid
+See - https://developer.mozilla.org/en-US/docs/Glossary/Grid
+See - http://grid.malven.co/
+`display: grid` property to signify CSS Grid on containing div
+`grid-template-columns: 1fr 1fr auto` or `grid-template-columns: repeat(4, 1fr)` fractions of width and auto fill 
+`grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))` great for responsive!
