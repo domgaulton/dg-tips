@@ -138,6 +138,10 @@ create new branch on repository
 5. `git remote add origin [url]` add git remote to project
 6. `git push -u origin master` push it to master branch
 
+#### Reset Repo / Branch to old commit
+* `git reset --hard <old-commit-id>`
+* `git push -f` or `git push -f <remote-name> <branch-name>`
+
 #### Useful Links
 https://education.github.com/git-cheat-sheet-education.pdf
 http://makeapullrequest.com/
@@ -152,6 +156,9 @@ http://makeapullrequest.com/
 
 #### Dev dependencies
 `-dev` Installs only in development mode
+
+#### Node
+* Gulp - 'internalBinding is not defined': run `npm install natives@1.1.6`  - https://github.com/gulpjs/gulp/issues/2246
 
 ## CSS
 
