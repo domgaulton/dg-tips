@@ -106,6 +106,11 @@ Clone a repository to your local drive
 `git status`
 shows what has been modified in working directory
 
+#### Rename File
+`git mv 'old file name' 'new file name'` So that changes can still be tracked
+
+git mv '05 - Destructuring/destructuring-arrays.html' '05 - Destructuring/19-destructuring-arrays.html'
+
 #### Add
 `git add [file]` 
 Add file or files updates so that git tracks it, use `.` to add all updated files
