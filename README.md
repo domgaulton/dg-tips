@@ -126,9 +126,12 @@ Push committed files to repo where {origin} and {branch} are optional. Defaults 
 `git pull`
 fetch and merge any commits from the tracking remote branch
 
-#### Checkout New Branch
+#### Create New Branch
 `git checkout -b [branch name]`
 create new branch on repository
+
+#### Change To Another Existing Branch
+`git checkout [branch name]`
 
 #### Add local repo to github
 1. Add repo on github
@@ -139,11 +142,11 @@ create new branch on repository
 6. `git push -u origin master` push it to master branch
 
 #### Reset file to last commit
-* `git checkout -- <file>` - Removes local changes
-  
+`git checkout -- <file>` - Removes local changes
+
 #### Reset Repo / Branch to old commit
-* `git reset --hard <old-commit-id>`
-* `git push -f` or `git push -f <remote-name> <branch-name>`
+`git reset --hard <old-commit-id>`
+`git push -f` or `git push -f <remote-name> <branch-name>`
 
 #### Useful Links
 https://education.github.com/git-cheat-sheet-education.pdf
