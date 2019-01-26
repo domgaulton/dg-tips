@@ -138,6 +138,9 @@ create new branch on repository
 5. `git remote add origin [url]` add git remote to project
 6. `git push -u origin master` push it to master branch
 
+#### Reset file to last commit
+* `git checkout -- <file>` - Removes local changes
+  
 #### Reset Repo / Branch to old commit
 * `git reset --hard <old-commit-id>`
 * `git push -f` or `git push -f <remote-name> <branch-name>`
