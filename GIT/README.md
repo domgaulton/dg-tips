@@ -1,50 +1,55 @@
-## Git
+# Git
 
-#### Git status
+## Git help
+* `git --help` - Gives you list of commands
+
+## Git status
 * `git status` - Shows what has been modified in working directory
 
-#### Clone
+## Clone
 * `git clone https://github.com/domgaulton/dg-tips.git` - Clone a repository to your local drive
 
-
-#### Rename file
+## Rename file
 * `git mv 'old file name' 'new file name'` - So that changes can still be tracked
 
-#### Add a file to the repository
+## Add a file to the repository
 * `git add {file}` - Add file or files updates so that git tracks it, use `.` to add all updated files
 
-#### Un-add (unstage / remove) from repository
+## Un-add (unstage / remove) from repository
 * `git reset HEAD {file}` - Removes (unstages) file
 
-#### Commit
+## Commit
 * `git commit -m 'lorem ipsum'` - Commit added files from above and add a commit message
 
-#### Reset file to last commit
+## Reset file to last commit
 * `git checkout -- {file}` - Removes local changes
 
-#### Push
-* `git push {origin} {branch name}`
+## Push
+* `git push {origin} {branch-name}`
 Push committed files to repo where {origin} and {branch} are optional. Defaults to origin and master
 
-#### Pull
+## Pull
 * `git pull`
 fetch and merge any commits from the tracking remote branch
 
-#### Create new branch
-* `git checkout -b {branch name}`
+## Create new branch
+* `git checkout -b {branch-name}`
 create new branch on repository
 
-#### Change to another existing branch
-* `git checkout {branch name}`
+## Change to another existing branch
+* `git checkout {branch-name}`
 
-#### Merge upstream branch to master
+## Delete a branch
+* `git branch -D {branch-name}`
+
+## Merge upstream branch to master
 1. Checkout master branch `git checkout {master}` 
 2. Pull changes from upstream branch `git pull https://github.com/{original-owner}/{original-repository}.git {branch-name}`
 3. Address conflicts if there are any
 4. Commit the merge
 5. Push to master branch `git push origin {master}`
 
-#### Add local repo to github
+## Add local repo to github
 1. Add repo on github
 2. cd to local repo then `git init`
 3. if you want to ignore node_modules (advised) run `touch .gitignore` and github will add a decent gitnore file
@@ -52,7 +57,7 @@ create new branch on repository
 5. `git remote add origin [url]` add git remote to project
 6. `git push -u origin master` push it to master branch
 
-#### Reset repository / Branch to old commit
+## Reset repository / Branch to old commit
 * `git reset --hard {old-commit-id}`
 * `git push -f` or `git push -f {remote-name} {branch-name}`
 
