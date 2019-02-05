@@ -11,7 +11,7 @@
 * https://www.udemy.com/home/my-courses/learning/
 * Node Heroku Server - https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
 
-### React Tutorials
+## React Tutorials
 * Udemy - https://www.udemy.com/the-complete-web-developer-zero-to-mastery
 * CodeAcademy - https://www.codecademy.com/learn/react-101
 
@@ -20,6 +20,9 @@
 * ES6 Notes Robert Tyree https://github.com/tyreer/es6-for-everybody
 * Unsplash Placeholder - https://source.unsplash.com/random/1920x1080
 
+## Public APIS
+* https://github.com/toddmotto/public-apis
+* https://developer.ibm.com/api/list
 
 ## Fletch
 
@@ -51,8 +54,10 @@
 (Misc) Something w/ websockets
 (Progressive Web App) - https://developers.google.com/web/progressive-web-apps/
 
-
 1. [60 JS tutorials](https://codeburst.io/60-javascript-tutorials-walkthroughs-cb315cc1947e)
+
 2. [470 Free Online Programming Tutorials & Courses](https://medium.freecodecamp.org/470-free-online-programming-computer-science-courses-you-can-start-in-april-433e50dfdc57)
-2. [620 Free Online Programming Tutorials & Courses](https://medium.freecodecamp.org/620-free-online-programming-computer-science-courses-you-can-start-in-march-68af9d45a115)
-3. [Web dev roadmap with supporting tutorials](https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d)
+
+3. [620 Free Online Programming Tutorials & Courses](https://medium.freecodecamp.org/620-free-online-programming-computer-science-courses-you-can-start-in-march-68af9d45a115)
+
+4. [Web dev roadmap with supporting tutorials](https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d)

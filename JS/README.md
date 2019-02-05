@@ -2,7 +2,7 @@
 
 ## Get Elements
 * `document.querySelector('# or .')` - The Document method querySelector() returns the first Element
-* `document.querySelectorAll('# or .')` - returns a static (not live) NodeList
+* `document.querySelectorAll('# or .')` - returns a static (not live - doesn't update) NodeList
 
 ## Element Attributes
 `element.attributes` - List of all element details! Very useful
@@ -10,12 +10,29 @@
 ## Terminology
 
 ### Functions
+* Function or method
+
 ### Objects
+* {items in curly brackets} - non-iterable
+
 ### Arrays
+* [items in square brackets] - iterable
 
 ## Javascript ES6
 
 ### Arrow Functions
+* from
+```js
+function someName(name){
+  console.log(name)
+}
+```
+* to
+```js
+const someName = (name) => {
+  console.log(name)
+}
+```
 
 ### Const and Let (block scoping)
 * `const x =` used when we don't want variable to change (note it can still be added to e.g. in an Array method such as `.push()`)
@@ -77,7 +94,7 @@ let { magical, power } = wizard;
 console.log(magical, power) // true 10
 ```
 
-### ES Lint
+## ES Lint
 * Check if it's already installed `eslint -v`
 * If not install using `npm install -g eslint`
 * Note: You might need to install `npm install -g eslint-plugin-html` and `npm install -g eslint-plugin-markdown` the first time
