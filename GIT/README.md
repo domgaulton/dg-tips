@@ -39,6 +39,20 @@ create new branch on repository
 ## Change to another existing branch
 * `git checkout {branch-name}`
 
+## Merge branch to master
+1. Start a new feature
+`git checkout -b {new-feature} master`
+2. Edit some files
+`git add {file}`
+`git commit -m "Start a feature"`
+3. Edit some files
+`git add {file}`
+`git commit -m "Finish a feature"`
+4. Merge in the new-feature branch
+`git checkout master`
+`git merge {new-feature}`
+`git branch -d {new-feature}`
+
 ## Delete a branch
 * `git branch -D {branch-name}`
 
