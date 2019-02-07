@@ -18,3 +18,4 @@ Tips on all things FE
 * [GIT](/GIT/README.md)
 * [NPM](/NPM/README.md)
 * [TERMINAL](/TERMINAL/README.md)
+* [ZSH](/ZSH/README.md)
