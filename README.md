@@ -15,7 +15,7 @@ Tips on all things FE
 ## Table of Contents
 * [CSS](/CSS/README.md)
 * [ES6 & Javascript](/JS/README.md)
-* [Finder](/Finder/README.md)
+* [Finder](/FINDER/README.md)
 * [GIT](/GIT/README.md)
 * [NPM](/NPM/README.md)
 * [Terminal](/TERMINAL/README.md)
