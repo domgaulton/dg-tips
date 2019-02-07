@@ -6,5 +6,5 @@
 ## Create file
 * `touch {filename.type}` - create file
 
-## Change Directoy
+## Change directoy
 * `cd {folder}` or `cd ..` - move into another child directory || move up one directory
