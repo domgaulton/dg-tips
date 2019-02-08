@@ -18,5 +18,6 @@ Tips on all things FE
 * [Finder](/FINDER/README.md)
 * [GIT](/GIT/README.md)
 * [NPM](/NPM/README.md)
+* [SUBLIME](/SUBLIME/README.md)
 * [Terminal](/TERMINAL/README.md)
 * [ZSH](/ZSH/README.md)
