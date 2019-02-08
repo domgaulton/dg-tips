@@ -12,3 +12,6 @@
 ## ZSH rc file
 * `subl ~/.zshrc` - With sublime plugin opens the zsh rc file
 * To add new plugins or themes open rc file and update `ZSH_THEME=` or `plugins=`
+
+## Open current folder
+* `stt` - opens current folder you're in
