@@ -7,6 +7,7 @@ Tips on all things FE
 * [Finder](/FINDER/README.md)
 * [GIT](/GIT/README.md)
 * [NPM](/NPM/README.md)
+* [Node](/NODE/README.md)
 * [Python](/PYTHON/README.md)
 * [SUBLIME](/SUBLIME/README.md)
 * [Terminal](/TERMINAL/README.md)
