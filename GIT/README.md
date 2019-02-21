@@ -18,6 +18,9 @@
 ## Un-add (unstage / remove) from repository
 * `git reset HEAD {file}` - Removes (unstages) file
 
+## Remove file / directory from git
+* `git rm -r {file or directory}` - Removes file from git (-r = recursive for directories)
+
 ## Commit
 * `git commit -m 'lorem ipsum'` - Commit added files from above and add a commit message
 
@@ -25,12 +28,10 @@
 * `git checkout -- {file}` - Removes local changes
 
 ## Push
-* `git push {origin} {branch-name}`
-Push committed files to repo where {origin} and {branch} are optional. Defaults to origin and master
+* `git push {origin} {branch-name}` -Push committed files to repo where {origin} and {branch} are optional. Defaults to origin and master
 
 ## Pull
-* `git pull`
-fetch and merge any commits from the tracking remote branch
+* `git pull` -fetch and merge any commits from the tracking remote branch
 
 ## Create new branch
 * `git checkout -b {branch-name}`
