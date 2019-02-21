@@ -16,6 +16,7 @@
 * `git add {file}` - Add file or files updates so that git tracks it, use `.` to add all updated files
 
 ## Un-add (unstage / remove) from repository
+* `git reset HEAD` - Removes all changes that you've done on the branch
 * `git reset HEAD {file}` - Removes (unstages) file
 
 ## Remove file / directory from git
