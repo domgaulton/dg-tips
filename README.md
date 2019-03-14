@@ -2,6 +2,7 @@
 Tips on all things FE
 
 ## Table of Contents
+* [BREW](/BREW/README.md)
 * [CSS](/CSS/README.md)
 * [ES6 & Javascript](/JS/README.md)
 * [Finder](/FINDER/README.md)
@@ -11,6 +12,7 @@ Tips on all things FE
 * [Python](/PYTHON/README.md)
 * [SUBLIME](/SUBLIME/README.md)
 * [Terminal](/TERMINAL/README.md)
+* [YARN](/YARN/README.md)
 * [ZSH](/ZSH/README.md)
 
 ## General Formatting
