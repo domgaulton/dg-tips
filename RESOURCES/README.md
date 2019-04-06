@@ -1,5 +1,14 @@
 # Notes & Tutorials
 
+
+## Servers / Deploying / Databases / Cool Things
+* https://pages.github.com/ - Hosting on github 
+* https://firebase.google.com/ - Live database updates using webhooks (Instructions - Wes Bos React for Beginners Lesson 18)
+* https://zeit.co/now - Serverless Deployments (Instructions - Wes Bos React for Beginners Lesson 26)
+* https://prismic.io/ - Headless CMS (Instructions - https://user-guides.prismic.io/examples/nodejs-samples/sample-ecommerce-site-with-snipcart-in-nodejs)
+* https://www.heroku.com/ - Node JS server (Tutorial - https://user-guides.prismic.io/examples/nodejs-samples/sample-ecommerce-site-with-snipcart-in-nodejs)
+
+
 ## To Do
 * NodeJS on server - https://www.heroku.com/pricing
 * Multiple YouTube Videos - https://github.com/domgaulton/multiple-youtube
