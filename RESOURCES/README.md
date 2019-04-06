@@ -7,6 +7,7 @@
 * https://zeit.co/now - Serverless Deployments (Instructions - Wes Bos React for Beginners Lesson 26)
 * https://prismic.io/ - Headless CMS (Instructions - https://user-guides.prismic.io/examples/nodejs-samples/sample-ecommerce-site-with-snipcart-in-nodejs)
 * https://www.heroku.com/ - Node JS server (Tutorial - https://user-guides.prismic.io/examples/nodejs-samples/sample-ecommerce-site-with-snipcart-in-nodejs)
+* https://snipcart.com/ - Snipcart (Instructions - https://user-guides.prismic.io/examples/nodejs-samples/sample-ecommerce-site-with-snipcart-in-nodejs)
 
 
 ## To Do
