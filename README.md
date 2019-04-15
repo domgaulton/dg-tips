@@ -10,6 +10,8 @@ Tips on all things FE
 * [NPM](/NPM/README.md)
 * [Node](/NODE/README.md)
 * [Python](/PYTHON/README.md)
+* [Resources](/RESOURCES/README.md)
+* [SSH](/SSH/README.md)
 * [SUBLIME](/SUBLIME/README.md)
 * [Terminal](/TERMINAL/README.md)
 * [YARN](/YARN/README.md)
