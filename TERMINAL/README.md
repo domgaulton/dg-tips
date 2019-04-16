@@ -11,3 +11,6 @@
 
 ## Curl
 * Used to transfer data from or to a server `curl -F "hello.html=@local.html" "https://USER:PASS@neocities.org/api/upload"`
+
+## VIM
+* Quit VIM editor press `esc` then colon `:wq` - Write your file by entering :w and quit by entering :q . You can combine these to save and exit by entering `:wq`

@@ -21,7 +21,7 @@ Host *
   UseKeychain yes
 ```
 
-* Note: To get into it, press Esc and then : (the colon). The cursor will go to the bottom of the screen at a colon prompt. Write your file by entering :w and quit by entering :q . You can combine these to save and exit by entering `:wq`
+* Note: To quit VIM editor see [Terminal VIM](../TERMINAL/README.md#VIM)
 
 ### Add key to apps
 * Copy and paste using - `pbcopy < ~/.ssh/id_rsa.pub` 
