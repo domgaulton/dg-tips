@@ -77,6 +77,21 @@ create new branch on repository
 * `git reset --hard {old-commit-id}`
 * `git push -f` or `git push -f {remote-name} {branch-name}`
 
+## Git Flow
+* Used for features, bugs - https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+* Install - `brew install git-flow` 
+* Creating and finishing branches
+```
+git flow feature start feature_branch
+git flow feature finish feature_branch
+```
+
+```
+$ git flow hotfix start hotfix_branch
+$ git flow hotfix finish hotfix_branch
+```
+
+
 #### Useful Links
 https://education.github.com/git-cheat-sheet-education.pdf
 http://makeapullrequest.com/
