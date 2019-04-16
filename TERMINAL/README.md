@@ -9,6 +9,9 @@
 ## Change directoy
 * `cd {folder}` or `cd ..` - move into another child directory || move up one directory
 
+## Move file(s)
+* `mv [file] [directory]` - move file into another directory relative to your own e.g. `mv README.md ../`
+
 ## Curl
 * Used to transfer data from or to a server `curl -F "hello.html=@local.html" "https://USER:PASS@neocities.org/api/upload"`
 
