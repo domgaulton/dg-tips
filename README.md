@@ -7,6 +7,7 @@ Tips on all things FE
 * [ES6 & Javascript](/JS/README.md)
 * [Finder](/FINDER/README.md)
 * [GIT](/GIT/README.md)
+* [Markdown](/MARKDOWN/README.md)
 * [NPM](/NPM/README.md)
 * [Node](/NODE/README.md)
 * [Python](/PYTHON/README.md)

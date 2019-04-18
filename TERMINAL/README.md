@@ -17,3 +17,8 @@
 
 ## VIM
 * Quit VIM editor press `esc` then colon `:wq` - Write your file by entering :w and quit by entering :q . You can combine these to save and exit by entering `:wq`
+
+## Hostsfile
+* https://www.tekrevue.com/tip/edit-hosts-file-mac-os-x/
+* `sudo nano /private/etc/hosts` and enter password
+* Where it says `^G` Get Help | `^O` WriteOut| `^R` Read File use `ctrl + G` etc - 
