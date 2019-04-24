@@ -82,10 +82,10 @@ create new branch on repository
 * Install - `brew install git-flow` 
 * Creating and finishing branches
 ```
-git flow feature start feature_branch
-git flow feature finish feature_branch
+git flow feature start feature_branch branched_from
+git flow feature finish feature_branch branched_from
 ```
-
+* Where `feature_branch` is your branch name and `branched_from` is for example `develop` or `release_branch` 
 ```
 $ git flow hotfix start hotfix_branch
 $ git flow hotfix finish hotfix_branch
