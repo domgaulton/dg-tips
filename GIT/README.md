@@ -50,7 +50,9 @@ create new branch on repository
 3. Edit some files
 `git add {file}`
 `git commit -m "Finish a feature"`
-4. Merge in the new-feature branch
+4. Ensure your branch has latest from main branch (e.g. master / develop)
+`git rebase {branch}` or `git merge {branch}` or `git fetch develop/feature/ABC-123`
+5. Merge in the new-feature branch
 `git checkout master`
 `git merge {new-feature}`
 `git branch -d {new-feature}`
