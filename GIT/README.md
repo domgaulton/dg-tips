@@ -41,6 +41,14 @@ create new branch on repository
 ## Change to another existing branch
 * `git checkout {branch-name}`
 
+## Git Stash
+* Save local files whilst changing branches. Below stashes branch and then adds it to the new branch after you check that out
+```
+git stash
+git checkout -b {new-branch-name}
+git stash pop
+```
+
 ## Merge branch to master
 1. Start a new feature
 `git checkout -b {new-feature} master`
