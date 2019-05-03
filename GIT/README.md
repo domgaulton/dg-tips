@@ -50,8 +50,11 @@ git stash pop
 ```
 
 ## Merge branch to master
-1. Start a new feature
-`git checkout -b {new-feature} master`
+1. Start a new feature from development branch
+```
+git checkout {development-branch}
+git checkout -b {new-feature}
+```
 2. Edit some files
 `git add {file}`
 `git commit -m "Start a feature"`
@@ -59,8 +62,8 @@ git stash pop
 `git add {file}`
 `git commit -m "Finish a feature"`
 4. Ensure your branch has latest from main branch (e.g. master / develop)
-`git rebase {branch}` or `git merge {branch}` or `git fetch develop/feature/ABC-123`
-5. Merge in the new-feature branch
+`git rebase {development-branch}` or `git merge {development-branch}` or from another branch `git fetch develop/feature/ABC-123`
+5. Merge in the new-feature branch (but recommended to use a pull request)
 `git checkout master`
 `git merge {new-feature}`
 `git branch -d {new-feature}`
