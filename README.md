@@ -13,6 +13,7 @@ Tips on all things FE
 - [GIT](/GIT/README.md)
 - [Markdown](/MARKDOWN/README.md)
 - [NPM](/NPM/README.md)
+- [NPM-PACKAGES](/NPM-PACKAGES/README.md)
 - [Node](/NODE/README.md)
 - [Python](/PYTHON/README.md)
 - [Resources](/RESOURCES/README.md)
