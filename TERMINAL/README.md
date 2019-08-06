@@ -1,24 +1,35 @@
 # Terminal
 
 ## Create folder
-* `mkdir {folder-name}` - make directory
+
+- `mkdir {folder-name}` - make directory
 
 ## Create file
-* `touch {filename.type}` - create file
+
+- `touch {filename.type}` - create file
 
 ## Change directoy
-* `cd {folder}` or `cd ..` - move into another child directory || move up one directory
+
+- `cd {folder}` or `cd ..` - move into another child directory || move up one directory
 
 ## Move file(s)
-* `mv [file] [directory]` - move file into another directory relative to your own e.g. move file to parent `mv README.md ../`
+
+- `mv [file] [directory]` - move file into another directory relative to your own e.g. move file to parent `mv README.md ../`
+
+## Open folder from terminal
+
+- `open .` to open current file in terminal
 
 ## Curl
-* Used to transfer data from or to a server `curl -F "hello.html=@local.html" "https://USER:PASS@neocities.org/api/upload"`
+
+- Used to transfer data from or to a server `curl -F "hello.html=@local.html" "https://USER:PASS@neocities.org/api/upload"`
 
 ## VIM
-* Quit VIM editor press `esc` then colon `:wq` - Write your file by entering :w and quit by entering :q . You can combine these to save and exit by entering `:wq`
+
+- Quit VIM editor press `esc` then colon `:wq` - Write your file by entering :w and quit by entering :q . You can combine these to save and exit by entering `:wq`
 
 ## Hostsfile
-* https://www.tekrevue.com/tip/edit-hosts-file-mac-os-x/
-* `sudo nano /private/etc/hosts` and enter password
-* Where it says `^G` Get Help | `^O` WriteOut| `^R` Read File use `ctrl + G` etc - 
+
+- https://www.tekrevue.com/tip/edit-hosts-file-mac-os-x/
+- `sudo nano /private/etc/hosts` and enter password
+- Where it says `^G` Get Help | `^O` WriteOut| `^R` Read File use `ctrl + G` etc -
