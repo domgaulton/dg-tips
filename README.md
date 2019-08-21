@@ -16,6 +16,7 @@ Tips on all things FE
 - [NPM-PACKAGES](/NPM-PACKAGES/README.md)
 - [Node](/NODE/README.md)
 - [Python](/PYTHON/README.md)
+- [ReactJS](/REACT/README.md)
 - [Resources](/RESOURCES/README.md)
 - [SSH](/SSH/README.md)
 - [SUBLIME](/SUBLIME/README.md)
