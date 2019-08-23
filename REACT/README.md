@@ -21,3 +21,33 @@ this.setState(prevState => ({
   )
 }));
 ```
+
+## setState from two different sources in one go (map through array)
+
+- Where `info` is array
+- Primary user details are saved uniquly
+- Dynamic state names for rest of the fields differently
+- Notice that we slice the first user from the forEach loop
+
+```js
+const new_existingState = {
+  ...this.state.existingState,
+  primary-name: info[0].name,
+  primary-id: info[0].id
+};
+
+// Loop through 2nd user onwards
+info.slice(1).forEach((elem, index) => {
+  const dynamicName = `user-${index}-name`;
+  const dynamicId = `user-${index}-id`;
+  new_existingState[dynamicName] = elem.name;
+  new_existingState[dynamicId] = elem.id;
+});
+
+// Set state of entire object above
+this.setState(
+  {
+    bookingModel: newBookingModel
+  }
+);
+```
