@@ -7,6 +7,7 @@ Tips on all things FE
 - [BREW](/BREW/README.md)
 - [CONSOLE](/CONSOLE/README.md)
 - [CSS](/CSS/README.md)
+- [CURL](/CURL/README.md)
 - [EASTEREGGS](/EASTEREGGS/README.md)
 - [ES6 & Javascript](/JS/README.md)
 - [Finder](/FINDER/README.md)
