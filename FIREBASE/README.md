@@ -10,6 +10,37 @@
 ## Sample functions
 * https://github.com/domgaulton/functions-samples/tree/master/github-to-slack
 
+## Firebase and Axios
+```
+const functions = require('firebase-functions');
+const axios = require('axios');
+const cors = require('cors')({ origin: true });
+const rp = require('request-promise');
+
+// IPify gets IP address
+exports.callAPI = functions.https.onRequest((req, res) => {
+  return axios.get('https://api.ipify.org?format=json')
+    .then(response => {
+      postToSlack(response.data.ip);
+    })
+    .catch(err => {
+      postToSlack(err);
+    })
+});
+
+function postToSlack(message) {
+  return rp({
+    method: 'POST',
+    // TODO: Configure the `slack.webhook_url` Google Cloud environment variables.
+    uri: 'SLACK URL',
+    body: {
+      text: message,
+    },
+    json: true,
+  });
+}
+```
+
 ## Firebase Config File
 Where you might have something like and import;
 
