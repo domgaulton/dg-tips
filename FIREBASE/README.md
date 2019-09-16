@@ -2,10 +2,12 @@
 
 ## Installing
 * `npm install -g firebase-tools` then head to directory (or make new folder) and `firebase init`. You might need to make sure you're logged in `firebase login`
+* In the firebase console make sure you have a Pay As You Go account so you can make external API calls
 
 ## Useful CLI commands
 * `firebase serve` - create a local server to test functions
 * `firebase deploy` - deploy your changes
+* `firebase functions:config:get` see below
 
 ## Sample functions
 * https://github.com/domgaulton/functions-samples/tree/master/github-to-slack
