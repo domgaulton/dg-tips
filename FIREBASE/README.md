@@ -1,5 +1,12 @@
 # Firebase
 
+## Installing
+* `npm install -g firebase-tools` then head to directory and `firebase init`
+
+## Useful CLI commands
+* `firebase serve` - create a local server to test functions
+* `firebase deploy` - deploy your changes
+
 ## Sample functions
 * https://github.com/domgaulton/functions-samples/tree/master/github-to-slack
 
