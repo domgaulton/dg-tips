@@ -1,7 +1,7 @@
 # Firebase
 
 ## Installing
-* `npm install -g firebase-tools` then head to directory and `firebase init`
+* `npm install -g firebase-tools` then head to directory (or make new folder) and `firebase init`. You might need to make sure you're logged in `firebase login`
 
 ## Useful CLI commands
 * `firebase serve` - create a local server to test functions
@@ -21,7 +21,7 @@ const rp = require('request-promise');
 exports.callAPI = functions.https.onRequest((req, res) => {
   return axios.get('https://api.ipify.org?format=json')
     .then(response => {
-      postToSlack(response.data.ip);
+      return postToSlack(response.data.ip);
     })
     .catch(err => {
       postToSlack(err);

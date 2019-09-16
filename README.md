@@ -4,11 +4,11 @@ Tips on all things FE
 
 ## Table of Contents
 
-- [BREW](/BREW/README.md)
-- [CONSOLE](/CONSOLE/README.md)
+- [Brew](/BREW/README.md)
+- [Console](/CONSOLE/README.md)
 - [CSS](/CSS/README.md)
 - [CURL](/CURL/README.md)
-- [EASTEREGGS](/EASTEREGGS/README.md)
+- [Easter Eggs](/EASTEREGGS/README.md)
 - [ES6 & Javascript](/JS/README.md)
 - [Finder](/FINDER/README.md)
 - [Firebase](/FIREBASE/README.md)
@@ -21,7 +21,7 @@ Tips on all things FE
 - [ReactJS](/REACT/README.md)
 - [Resources](/RESOURCES/README.md)
 - [SSH](/SSH/README.md)
-- [SUBLIME](/SUBLIME/README.md)
+- [Sublime](/SUBLIME/README.md)
 - [Terminal](/TERMINAL/README.md)
 - [YARN](/YARN/README.md)
 - [ZSH](/ZSH/README.md)
