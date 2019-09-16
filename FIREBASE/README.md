@@ -9,11 +9,11 @@ Where you might have something like and import;
 ```
 slack: {
   api: 'stringXYZ',
-  user: 'dgtips',
+  user: 'dgtips'
 },
 something_else: {
   api: 'fbXYZ',
-  user: 'domfire',
+  user: 'domfire'
 }
 ```
 
