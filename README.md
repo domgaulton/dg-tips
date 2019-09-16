@@ -11,6 +11,7 @@ Tips on all things FE
 - [EASTEREGGS](/EASTEREGGS/README.md)
 - [ES6 & Javascript](/JS/README.md)
 - [Finder](/FINDER/README.md)
+- [Firebase](/FIREBASE/README.md)
 - [GIT](/GIT/README.md)
 - [Markdown](/MARKDOWN/README.md)
 - [NPM](/NPM/README.md)
