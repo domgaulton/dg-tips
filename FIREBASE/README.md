@@ -57,3 +57,6 @@ something_else: {
 
 You can set config with firebase as follows
 * `firebase functions:config:set slack.api="stringXYZ" something_else.api="fbXYZ"`
+
+Use `firebase functions:config:get` in project file to retrieve config data
+
