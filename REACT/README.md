@@ -2,10 +2,10 @@
 
 ## Target specific nested state object and update
 
-- Where `stateObject` is the wrapper state object
-- Where `itemObject` is the object you want to update
-- `uniqueId` is the unique reference to update
-- `targetId` is the variable you are using as the key to finding and updating the specific `itemObject` in the `stateObject`
+* Where `stateObject` is the wrapper state object
+* Where `itemObject` is the object you want to update
+* `uniqueId` is the unique reference to update
+* `targetId` is the variable you are using as the key to finding and updating the specific `itemObject` in the `stateObject`
 
 ```js
 this.setState(prevState => ({
@@ -24,10 +24,10 @@ this.setState(prevState => ({
 
 ## setState from two different sources in one go (map through array)
 
-- Where `info` is array
-- Primary user details are saved uniquly
-- Dynamic state names for rest of the fields differently
-- Notice that we slice the first user from the forEach loop
+* Where `info` is array
+* Primary user details are saved uniquly
+* Dynamic state names for rest of the fields differently
+* Notice that we slice the first user from the forEach loop
 
 ```js
 const new_existingState = {
@@ -53,9 +53,9 @@ this.setState(
 ```
 
 ## React.Context
-Allows global data to be accessed and set!
-1. Set up your context
-```js
+* Allows global data to be accessed and set!
+1. Set up your context DataProvider.js
+```
 import React, { Component } from 'react';
 
 // see React.creactContext() documentation;
@@ -89,19 +89,64 @@ class DataProvider extends Component {
       </Context.Provider>
     );
   }
-
 }
 
 // Export provider
 export default DataProvider;
 
 // Export named function that allows people to consume the data
-export const ContextConsumer = Context.Consumer;
+export const DataConsumer = Context.Consumer;
+```
+2. `DataProvider` (default export) - Then in App route you wrap a provider around the component
+```
+import React from 'react';
+import DataProvider from "./context/DataProvider";
+
+function AppRouter() {
+  return (
+    <DataProvider>
+      <App/>
+    </DataProvider>
+  );
+}
+
+export default AppRouter;
+
+```
+3. `DataConsumer` (named export) - And finally on each component pass the state data from above from the exported `DataConsumer` to the component to access state data.
+```
+import React, { Component } from 'react';
+import { DataConsumer } from "./context/DataProvider";
+
+
+class Something extends Component {
+  render(){
+    return (
+      <div className="App">
+        <h1>Create Tavern</h1>
+         {this.props.newData}
+      </div>
+    );
+  }
+}
+
+const SomethingUpdate = props => (
+  <DataConsumer>
+    {({ newData }) => (
+      <Home
+        // remember to spread the existing props otherwise you lose any new ones e.g. 'something' that don't come from the provider
+        {...props}
+        newData={newData}
+      />
+    )}
+  </DataConsumer>
+);
+
+export default SomethingUpdate;
 ```
 
-
 ## useState
-no need for a component with React
+* No need for a component with React
 ```js
 import React, { useState } from 'react';
 
