@@ -51,3 +51,77 @@ this.setState(
   }
 );
 ```
+
+## React.Context
+Allows global data to be accessed and set!
+1. Set up your context
+```js
+import React, { Component } from 'react';
+
+// see React.creactContext() documentation;
+const Context = React.createContext();
+
+// create a DataProvider
+class DataProvider extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: {},
+      fact: false,
+      loaded: false,
+      setFunction: (data) => this.handleSetFunction(data),
+    };
+  }
+
+  // Here we have a function that updates the state and global data
+  handleSetFunction = data => {
+    this.setState({
+      data,
+      loaded: true,
+    })
+  }
+
+  // Return the state as the value of the context provider
+  render(){
+    return (
+      <Context.Provider value={this.state}>
+        {this.props.children}
+      </Context.Provider>
+    );
+  }
+
+}
+
+// Export provider
+export default DataProvider;
+
+// Export named function that allows people to consume the data
+export const ContextConsumer = Context.Consumer;
+```
+
+
+## useState
+no need for a component with React
+```js
+import React, { useState } from 'react';
+
+function Application(props) {
+
+  // think of this as `this.state.data` and `this.setState({data: bool )`
+  const [data, set_data] = useState(false);
+
+  const handleSetData = () => {
+    set_data(true);
+  }
+
+  return data ? (
+    <Something />
+  ) : (
+    <SomethingElse setData={handleSetData}/>
+  );
+
+}
+
+export default Application;
+
+
