@@ -9,6 +9,25 @@
 * `firebase deploy` - deploy your changes
 * `firebase functions:config:get` see below
 
+## Multiple hosting on one project
+* Init project as normal with project id that holds your app - Add hosting to firebase.json
+```
+{
+  "hosting": {
+    "site": "XXXXX",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
+
+```
+* Set up build command in your package.json
+`"deploy": "firebase deploy --only hosting:XXXXX"`
+
 ## Sample functions
 * https://github.com/domgaulton/functions-samples/tree/master/github-to-slack
 
