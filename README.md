@@ -10,6 +10,8 @@ Tips on all things FE
 - [CURL](/CURL/README.md)
 - [Easter Eggs](/EASTEREGGS/README.md)
 - [ES6 & Javascript](/JS/README.md)
+- [DOCKER](/DOCKER/README.md)
+- [DRUSH](/DRUSH/README.md)
 - [Finder](/FINDER/README.md)
 - [Firebase](/FIREBASE/README.md)
 - [GIT](/GIT/README.md)
