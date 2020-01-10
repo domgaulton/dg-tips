@@ -51,6 +51,7 @@ git stash pop
 
 ## Git interative add all
 * `git add --a -p`
+* `? [enter]`
 
 ## Merge branch to master
 1. Start a new feature from development branch
