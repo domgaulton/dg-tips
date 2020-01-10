@@ -49,6 +49,9 @@ git checkout -b {new-branch-name}
 git stash pop
 ```
 
+## Git interative add all
+* `git add --a -p`
+
 ## Merge branch to master
 1. Start a new feature from development branch
 ```
@@ -72,7 +75,7 @@ git checkout -b {new-feature}
 * `git branch -D {branch-name}`
 
 ## Merge upstream branch to master
-1. Checkout master branch `git checkout {master}` 
+1. Checkout master branch `git checkout {master}`
 2. Pull changes from upstream branch `git pull https://github.com/{original-owner}/{original-repository}.git {branch-name}`
 3. Address conflicts if there are any
 4. Commit the merge
@@ -92,13 +95,13 @@ git checkout -b {new-feature}
 
 ## Git Flow
 * Used for features, bugs - https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
-* Install - `brew install git-flow` 
+* Install - `brew install git-flow`
 * Creating and finishing branches
 ```
 git flow feature start feature_branch branched_from
 git flow feature finish feature_branch branched_from
 ```
-* Where `feature_branch` is your branch name and `branched_from` is for example `develop` or `release_branch` 
+* Where `feature_branch` is your branch name and `branched_from` is for example `develop` or `release_branch`
 ```
 $ git flow hotfix start hotfix_branch
 $ git flow hotfix finish hotfix_branch
