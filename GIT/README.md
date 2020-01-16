@@ -108,6 +108,8 @@ $ git flow hotfix start hotfix_branch
 $ git flow hotfix finish hotfix_branch
 ```
 
+## Git Cherrypick
+* Pull code from specific commits `git cherry-pick [01ab98]` with commit id
 
 #### Useful Links
 https://education.github.com/git-cheat-sheet-education.pdf
