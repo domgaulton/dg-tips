@@ -5,6 +5,7 @@ Tips on all things FE
 ## Table of Contents
 
 - [Brew](/BREW/README.md)
+- [CACHE](/CACHE/README.md)
 - [Console](/CONSOLE/README.md)
 - [CSS](/CSS/README.md)
 - [CURL](/CURL/README.md)
