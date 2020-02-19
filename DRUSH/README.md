@@ -21,3 +21,4 @@
 
 ## Sync a database
 * `drush sqlc < {path/to/database.db}`
+* `drush sql-sync {@database source} {@target}` e.g. drush sql-sync prod dev
