@@ -45,9 +45,7 @@
 
   checkLocalStorage() {
     const timeArraySaved = retrieveFromLocalStorage('arrayTS');
-    const localArraySaved = JSON.parse(
-      retrieveFromLocalStorage('array'),
-    );
+    const localArraySaved = JSON.parse(retrieveFromLocalStorage('array'));
     const now = Date.now();
     const minutesLimit = 15;
     const cacheLimit = minutesLimit * 60 * 1000;
