@@ -47,6 +47,17 @@ const hello = `Hello ${name}`
 console.log(hello); // 'Hello Foo'
 ```
 
+* Returning a string by sending literal as the string
+```js
+const age = (str, age) => {
+  const ageStr = age > 5 ? `old` : `young`
+  return `${str[0]}${ageStr} at ${age} years`
+}
+
+const calcAge = age`This thing is ${3}`
+// This thing is young at 3 years
+````
+
 ### Spread Operator (...)
 * No need to concat anymore...
 
@@ -94,32 +105,21 @@ let { magical, power } = wizard;
 console.log(magical, power) // true 10
 ```
 
-## ES Lint
-* Check if it's already installed `eslint -v`
-* If not install using `npm install -g eslint`
-* Note: You might need to install `npm install -g eslint-plugin-html` and `npm install -g eslint-plugin-markdown` the first time
-* Run `eslint {filename.js}` in your terminal to see if it's working
-* Create a eslintrc file - `touch .eslintrc` to create a configure file. 
-* Add the below json object to the file WHERE;
-* `env` : your environments that you'll be working with https://eslint.org/docs/user-guide/configuring#specifying-environments
-* `extends` : what your checking your code against - To install airbnb follow https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb (npm5+ and global install `npx install-peerdeps --dev eslint-config-airbnb -g`)
-* `rules` : overwrites the extends rules
+### Async Await
+
+* Add async to the promise function
 
 ```js
-{
-  "env": {
-    "es6": true,
-    "browser": true
-  },
-  // "extends": "eslint:recommended", // Use this before installing airbnb plugin
-  "extends": "airbnb", // https://github.com/airbnb/javascript
-  "rules": {
-    "no-console": 0, // no-console: 0 (off) ... therefore console functions are allowed. Other rules 1) warn 2) error - https://eslint.org/docs/rules/no-console
-    "no-unused-vars": 1 // warning rather than error for unused vars - https://eslint.org/docs/rules/no-unused-vars
-  },
-  "plugins": ["html", "markdown"] // used for JavaScript in HTML <script> or ```js Markdown
+const random = () => {
+  return Promise.resolve(Math.random())
+}
+
+const sumRandomAsyncNums = async() => {
+  const first = await random();
+  const second = await random();
+  const third = await random();
+
+  // This won't run until each of the await functions are completed above
+  console.log(`Result ${first + second + third}`);
 }
 ```
-
-* Install `sublimelinter eslint` in package control
-* Sublime and other text editors need the `.eslintrc` file in project or anywhere in root of app to query against.

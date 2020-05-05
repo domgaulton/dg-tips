@@ -9,7 +9,37 @@
 }
 ```
 
-## EsLint Plugin
+## ES Lint
+* Check if it's already installed `eslint -v`
+* If not install using `npm install -g eslint`
+* Note: You might need to install `npm install -g eslint-plugin-html` and `npm install -g eslint-plugin-markdown` the first time
+* Run `eslint {filename.js}` in your terminal to see if it's working
+* Create a eslintrc file - `touch .eslintrc` to create a configure file.
+* Add the below json object to the file WHERE;
+* `env` : your environments that you'll be working with https://eslint.org/docs/user-guide/configuring#specifying-environments
+* `extends` : what your checking your code against - To install airbnb follow https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb (npm5+ and global install `npx install-peerdeps --dev eslint-config-airbnb -g`)
+* `rules` : overwrites the extends rules
+
+```js
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  // "extends": "eslint:recommended", // Use this before installing airbnb plugin
+  "extends": "airbnb", // https://github.com/airbnb/javascript
+  "rules": {
+    "no-console": 0, // no-console: 0 (off) ... therefore console functions are allowed. Other rules 1) warn 2) error - https://eslint.org/docs/rules/no-console
+    "no-unused-vars": 1 // warning rather than error for unused vars - https://eslint.org/docs/rules/no-unused-vars
+  },
+  "plugins": ["html", "markdown"] // used for JavaScript in HTML <script> or ```js Markdown
+}
+```
+
+* Install `sublimelinter eslint` in package control
+* Sublime and other text editors need the `.eslintrc` file in project or anywhere in root of app to query against.
+
+### ES Lint Plugin
 
 1. Install eslint globally `npm install -g eslint`
 2. Install Package Manager for Sublime (`cmd + shift + p` and type Install Package)
@@ -17,7 +47,7 @@
 4. Install `SublimeLinter-contrib-eslint` - So it knows to look at the JavaScript https://github.com/sublimelinter/sublimelinter-eslint
 5. Restart Sublime
 
-## Editor config
+### Editor config
 
 ```
 # http://editorconfig.org
@@ -34,7 +64,7 @@ insert_final_newline = true
 trim_trailing_whitespace = false
 ```
 
-## Current Styles 2019
+### Current Styles 2019
 
 ```
 {
