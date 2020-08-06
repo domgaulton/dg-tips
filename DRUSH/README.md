@@ -21,4 +21,14 @@
 
 ## Sync a database
 * `drush sqlc < {path/to/database.db}`
-* `drush sql-sync {@database source} {@target}` e.g. drush sql-sync prod dev
+* `drush sql-sync {@database source} {@target}` e.g. `drush sql-sync /@prod @self` or `drush sql-sync /@dev @self`(See below for notes)
+
+```
+if you do `drush sa` in your local, you’ll see all the aliases available for the project
+
+examples might be: `dev`, `test` and `prod`
+which is more like: `dev`, `stg` and `prod`
+
+@self is the environment where you are right now. 
+To check this check `drush status` would be the same as doing drush @self status
+```
