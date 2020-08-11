@@ -23,6 +23,7 @@ Tips on all things FE
 - [Python](/PYTHON/README.md)
 - [ReactJS](/REACT/README.md)
 - [Resources](/RESOURCES/README.md)
+- [SCSS](/SCSS/README.md)
 - [SSH](/SSH/README.md)
 - [Sublime](/SUBLIME/README.md)
 - [Terminal](/TERMINAL/README.md)
