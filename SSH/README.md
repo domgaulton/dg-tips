@@ -3,6 +3,12 @@
 ## Overview
 https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html#SetupanSSHkey-ssh2
 
+### SSH into another machine on network
+* Ensure Remote Login is active - To do this System Preferences > Remote Login > tick yes
+* Find IP of machine to log into by looking in network preferences e.g. `192.168.0.69.`
+* From another machine type `ssh [user]@192.168.0.69.` into terminal where [user] is name of other machine
+* To exit type `exit` from terminal
+
 ### Creating a key
 * run `ssh-keygen` in terminal from `$~` route
 * passcode can be blank (press enter twice)
