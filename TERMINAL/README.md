@@ -16,6 +16,11 @@
 
 - `mv [file] [directory]` - move file into another directory relative to your own e.g. move file to parent `mv README.md ../`
 
+## Copy file
+
+- `cp example.env .env` - copy `example.env` to same directory and rename as `.env`
+- `cp README.md ../TEST/README.md` - copy `README.md` (this file) to same `TEST` directory with the (same) name `README.md`
+
 ## Open folder from terminal
 
 - `open .` to open current file in terminal
