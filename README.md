@@ -5,8 +5,9 @@ Tips on all things FE
 ## Table of Contents
 
 - [Brew](/BREW/README.md)
-- [CACHE](/CACHE/README.md)
+- [Cache](/CACHE/README.md)
 - [Console](/CONSOLE/README.md)
+- [Composer](/COMPOSER/README.md)
 - [CSS](/CSS/README.md)
 - [CURL](/CURL/README.md)
 - [Easter Eggs](/EASTEREGGS/README.md)
@@ -27,7 +28,7 @@ Tips on all things FE
 - [SSH](/SSH/README.md)
 - [Sublime](/SUBLIME/README.md)
 - [Terminal](/TERMINAL/README.md)
-- [YARN](/YARN/README.md)
+- [Yarn](/YARN/README.md)
 - [ZSH](/ZSH/README.md)
 
 ## General Formatting
