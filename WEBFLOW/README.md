@@ -4,11 +4,14 @@
 
 ### General Info
 
+command ($)
 ```curl
 $ curl https://api.webflow.com/info \
   -H "Authorization: Bearer {API KEY}" \
   -H 'accept-version: 1.0.0'
 ```
+
+returns
 
 ```json
 {
@@ -32,12 +35,14 @@ $ curl https://api.webflow.com/info \
 
 ### General Sites Info
 
+command ($)
 ```curl
 $ curl https://api.webflow.com/sites \
   -H "Authorization: Bearer {API KEY}" \
   -H 'accept-version: 1.0.0'
 ```
 
+returns
 ```json
 [
    {
@@ -55,12 +60,14 @@ $ curl https://api.webflow.com/sites \
 
 ### Specific Sites Info
 
+command ($)
 ```curl
 $ curl https://api.webflow.com/sites/5f7318268aa95711a570d244 \
     -H "Authorization: Bearer {API KEY}" \
     -H 'accept-version: 1.0.0'
 ```
 
+returns
 ```json
 {
    "_id":"5f7318268aa95711a570d244",
@@ -76,6 +83,7 @@ $ curl https://api.webflow.com/sites/5f7318268aa95711a570d244 \
 
 ### Publish
 
+command ($)
 ```curl
 $ curl https://api.webflow.com/sites/5f7318268aa95711a570d244/publish \
     -H "Authorization: Bearer {API KEY}" \
@@ -86,18 +94,21 @@ $ curl https://api.webflow.com/sites/5f7318268aa95711a570d244/publish \
     }'
 ```
 
+returns
 ```json
 {"queued":true} 
 ```
 
 ### Collections
 
+command ($)
 ```curl
 $ curl https://api.webflow.com/sites/5f7318268aa95711a570d244/collections \
     -H "Authorization: Bearer {API KEY}" \
     -H 'accept-version: 1.0.0'
 ```
 
+returns
 ```json
 [
    {
@@ -121,12 +132,14 @@ $ curl https://api.webflow.com/sites/5f7318268aa95711a570d244/collections \
 
 ### All Collection Items
 
+command ($)
 ```curl
 $ curl https://api.webflow.com/collections/5f743d176aba26246bbadf6a/items?limit=5\
     -H "Authorization: Bearer {API KEY}" \
     -H 'accept-version: 1.0.0'
 ```
 
+returns
 ```json
 {
    "items":[
@@ -276,6 +289,7 @@ $ curl https://api.webflow.com/collections/5f743d176aba26246bbadf6a/items?limit=
 ### Patch an item
 * Note the `?live=true` on live flag if it appears on live already
 
+command ($)
 ```curl
 $ curl -X PATCH 'https://api.webflow.com/collections/5f743d176aba26246bbadf6a/items/5f86ea0e7911867b1770fc1d?live=true' \
   -H "Authorization: Bearer {API KEY}" \
@@ -288,6 +302,7 @@ $ curl -X PATCH 'https://api.webflow.com/collections/5f743d176aba26246bbadf6a/it
     }'
 ```
 
+returns
 ```json
 {
    "_archived":false,
