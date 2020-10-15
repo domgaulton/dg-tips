@@ -12,7 +12,7 @@ $ curl https://api.webflow.com/info \
 
 returns
 
-```yaml
+```json
 {
    "_id":"5f86de76a7294c3c83eaaa14",
    "createdOn":"2020-10-14T11:18:14.772Z",
@@ -41,7 +41,7 @@ $ curl https://api.webflow.com/sites \
 ```
 
 returns
-```js
+```json
 [
    {
       "_id":"5f7318268aa95711a570d244",
@@ -65,7 +65,7 @@ $ curl https://api.webflow.com/sites/5f7318268aa95711a570d244 \
 ```
 
 returns
-```javascript
+```json
 {
    "_id":"5f7318268aa95711a570d244",
    "createdOn":"2020-09-29T11:19:02.137Z",
@@ -80,7 +80,6 @@ returns
 
 ### Publish
 
-command ($)
 ```curl
 $ curl https://api.webflow.com/sites/5f7318268aa95711a570d244/publish \
     -H "Authorization: Bearer {API KEY}" \
@@ -98,7 +97,6 @@ returns
 
 ### Collections
 
-command ($)
 ```curl
 $ curl https://api.webflow.com/sites/5f7318268aa95711a570d244/collections \
     -H "Authorization: Bearer {API KEY}" \
@@ -129,7 +127,6 @@ returns
 
 ### All Collection Items
 
-command ($)
 ```curl
 $ curl https://api.webflow.com/collections/5f743d176aba26246bbadf6a/items?limit=5\
     -H "Authorization: Bearer {API KEY}" \
@@ -286,7 +283,6 @@ returns
 ### Patch an item
 * Note the `?live=true` on live flag if it appears on live already
 
-command ($)
 ```curl
 $ curl -X PATCH 'https://api.webflow.com/collections/5f743d176aba26246bbadf6a/items/5f86ea0e7911867b1770fc1d?live=true' \
   -H "Authorization: Bearer {API KEY}" \
