@@ -4,7 +4,6 @@
 
 ### General Info
 
-command ($)
 ```curl
 $ curl https://api.webflow.com/info \
   -H "Authorization: Bearer {API KEY}" \
@@ -13,7 +12,7 @@ $ curl https://api.webflow.com/info \
 
 returns
 
-```json
+```yaml
 {
    "_id":"5f86de76a7294c3c83eaaa14",
    "createdOn":"2020-10-14T11:18:14.772Z",
@@ -35,7 +34,6 @@ returns
 
 ### General Sites Info
 
-command ($)
 ```curl
 $ curl https://api.webflow.com/sites \
   -H "Authorization: Bearer {API KEY}" \
@@ -43,7 +41,7 @@ $ curl https://api.webflow.com/sites \
 ```
 
 returns
-```json
+```js
 [
    {
       "_id":"5f7318268aa95711a570d244",
@@ -60,7 +58,6 @@ returns
 
 ### Specific Sites Info
 
-command ($)
 ```curl
 $ curl https://api.webflow.com/sites/5f7318268aa95711a570d244 \
     -H "Authorization: Bearer {API KEY}" \
@@ -68,7 +65,7 @@ $ curl https://api.webflow.com/sites/5f7318268aa95711a570d244 \
 ```
 
 returns
-```json
+```javascript
 {
    "_id":"5f7318268aa95711a570d244",
    "createdOn":"2020-09-29T11:19:02.137Z",
