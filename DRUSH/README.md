@@ -8,13 +8,14 @@
 ## Clear Cache
 * `drush cr` - clear site cache
 
-## Export config settings
-* `drush cex sync -y` to save your settings to a branch that you need to put to develop (using `-y` flag to accept settings)
 ## Import config settings
 * `drush cim sync -y` when on a new branch (using `-y` flag to accept settings)
 
 ## Export config settings
 * `drush cex sync -y` to save your settings to a branch that you need to put to develop (using `-y` flag to accept settings)
+
+## Custom - get data from endpoint
+* `drush srr` gets SR data and saves it in cache
 
 ## Drop / Forget Database
 * `drush sql-drop`
