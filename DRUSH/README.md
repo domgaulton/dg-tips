@@ -33,3 +33,19 @@ which is more like: `dev`, `stg` and `prod`
 @self is the environment where you are right now. 
 To check this check `drush status` would be the same as doing drush @self status
 ```
+
+## Drush Site Alias - Login Method
+* `drush sa`
+```
+'@project.dev':
+  uri: dev.project.co.uk
+  host: abc.com
+  options: {  }
+  paths:
+    dump-dir: /mnt/tmp
+  root: /var/www/html/project.dev/docroot
+  user: project.dev
+  ssh:
+    options: '-p 22'
+```
+* Log in using `drush @project.dev uli`
