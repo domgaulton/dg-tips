@@ -3,7 +3,7 @@
 * NB Also see [DOCKER](/DOCKER/README.md)
 
 ## Login to Drupal
-* `drush uli` - give you login link
+* `drush uli` - give you login link.
 
 ## Clear Cache
 * `drush cr` - clear site cache
@@ -27,12 +27,15 @@
 ```
 if you do `drush sa` in your local, you’ll see all the aliases available for the project
 
-examples might be: `dev`, `test` and `prod`
+examples might be: `project.dev`, `project.test` and `project.prod`
 which is more like: `dev`, `stg` and `prod`
 
 @self is the environment where you are right now. 
 To check this check `drush status` would be the same as doing drush @self status
 ```
+
+## Sync images 
+* `drush rsync @project.dev:%files/ @self:%files` where `@project.dev` is site alias
 
 ## Drush Site Alias - Login Method
 * `drush sa`
@@ -49,3 +52,4 @@ To check this check `drush status` would be the same as doing drush @self status
     options: '-p 22'
 ```
 * Log in using `drush @project.dev uli`
+
