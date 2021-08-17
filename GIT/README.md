@@ -13,7 +13,7 @@
 * `git mv 'old file name' 'new file name'` - So that changes can still be tracked
 
 ## Add a file to the repository
-* `git add {file}` - Add file or files updates so that git tracks it, use `.` to add all updated files
+* `git add {file}` - Add file or files updates so that git tracks it, use `.` or `--a` to add all updated files
 
 ## Un-add (unstage / remove) from repository
 * `git reset HEAD` - Removes all changes that you've done on the branch
@@ -21,6 +21,25 @@
 
 ## Remove file / directory from git
 * `git rm -r {file or directory}` - Removes file from git (-r = recursive for directories)
+
+## Git diff
+* `git diff` to see old and new between files.
+* `git diff --a -p` patch through each commit line and stage or unstage on a line per line perspective.
+**HINT**: Use `?` to see list of what commands you can use https://git-scm.com/docs/git-add#Documentation/git-add.txt--p
+```
+y - stage this hunk
+n - do not stage this hunk
+q - quit; do not stage this hunk or any of the remaining ones
+a - stage this hunk and all later hunks in the file
+d - do not stage this hunk or any of the later hunks in the file
+g - select a hunk to go to
+/ - search for a hunk matching the given regex
+j - leave this hunk undecided, see next undecided hunk
+J - leave this hunk undecided, see next hunk
+e - manually edit the current hunk
+? - print help
+```
+
 
 ## Commit
 * `git commit -m 'lorem ipsum'` - Commit added files from above and add a commit message
