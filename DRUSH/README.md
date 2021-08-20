@@ -34,6 +34,11 @@ which is more like: `dev`, `stg` and `prod`
 To check this check `drush status` would be the same as doing drush @self status
 ```
 
+## Export Database
+
+* `drush sql-dump --result-file=database-name.sql`
+* If this fails do it within the container `docker-compose exec fpm bash` then `drush sql-dump --result-file=database-name.sql`
+
 ## Sync images 
 * `drush rsync @project.dev:%files/ @self:%files` where `@project.dev` is site alias
 
