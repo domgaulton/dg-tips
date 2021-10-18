@@ -6,6 +6,7 @@ Tips on all things FE
 
 - [Brew](/BREW/README.md)
 - [Cache](/CACHE/README.md)
+- [Chrome](/CHROME/README.md)
 - [Console](/CONSOLE/README.md)
 - [Composer](/COMPOSER/README.md)
 - [CSS](/CSS/README.md)
