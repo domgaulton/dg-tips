@@ -58,3 +58,5 @@ To check this check `drush status` would be the same as doing drush @self status
 ```
 * Log in using `drush @project.dev uli`
 
+## Run drush in docker container
+* [See docker](/DOCKER/README.md#run-drush-in-docker-container)

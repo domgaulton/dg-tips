@@ -6,6 +6,6 @@
 * `docker-compose up -d`
 
 ## Run drush in docker container
-1. `docker-compose exec php bash`
+1. `docker-compose exec fpm bash`
 2. `cd docroot/`
 3. `../vendor/bin/{DRUSH COMNMAND}`
