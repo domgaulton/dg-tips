@@ -4,6 +4,9 @@
 
 ## Start docker container
 * `docker-compose up -d`
+* `docker-compose up -d server`
+* `docker-compose up -d nginx`
+* `docker-compose up -d apache`
 
 ## Run drush in docker container
 1. `docker-compose exec fpm bash`
