@@ -38,3 +38,8 @@
 - https://www.tekrevue.com/tip/edit-hosts-file-mac-os-x/
 - `sudo nano /private/etc/hosts` and enter password
 - Where it says `^G` Get Help | `^O` WriteOut| `^R` Read File use `ctrl + G` etc -
+
+## Edit with NANO
+
+- `EDITOR=nano {filename}`
+- If this doesn't work you need to install Nano using `apt-get update && apt-get install nano`
