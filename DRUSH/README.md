@@ -78,3 +78,7 @@ To check this check `drush status` would be the same as doing drush @self status
 1. Delete `/vendor` folder
 2. Run `composer install --ignore-platform-reqs` in root
 3. Drush `drush cr && drush cim && drush cr` commands. Choose sync option for config import if asked.
+
+## Drush delete entities
+* Error message `Entities exist of type <em class="placeholder">Entity Name</em>. These entities need to be deleted before importing.`
+* To delete use `drush entity:delete entity_name`
