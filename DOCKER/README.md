@@ -18,9 +18,13 @@
 ## Completely remove container (and DB)
 
 - `docker-compose down` - Remove container
-  Check to see if the containers have been removed below in two ways
+
+### Check to see if the containers have been removed below in two ways
+
 - `docker ps -a | grep [project]` - Check if any parts haven't been removed. See next steps if you need to manually remove them.
 - `docker rm [id or container name] [id or container name]`
-  Or
+
+### Or
+
 - `docker volume ls` - Check if any parts haven't been removed. See next steps if you need to manually remove them.
 - `docker volume rm [id or container name] [id or container name]`
