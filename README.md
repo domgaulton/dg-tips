@@ -19,6 +19,7 @@ Tips on all things FE
 - [Finder](/FINDER/README.md)
 - [Firebase](/FIREBASE/README.md)
 - [GIT](/GIT/README.md)
+- [GRAPHQL](/GRAPHQL/README.md)
 - [Markdown](/MARKDOWN/README.md)
 - [NPM](/NPM/README.md)
 - [NPM-PACKAGES](/NPM-PACKAGES/README.md)
