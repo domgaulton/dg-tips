@@ -11,3 +11,5 @@ function {project}_preprocess_{template_name__here}(array &$variables) {
 ```
 
 To get the array variable it can either be `theme_hook_original` name or look for an array with loads of children
+
+* NB Also see [Theme Debug Template Names](/TWIG#theme-debug-template-names)
