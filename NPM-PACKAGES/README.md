@@ -9,3 +9,6 @@
 
 - `ws -https`
 - https://www.npmjs.com/package/local-web-server
+
+## Axios
+* `process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';` For SSL help

@@ -8,3 +8,6 @@
 
 ## Global packages
 * `/Users/{user}/.nvm/versions/node` 
+
+## Package.json
+* using `"type": "module",` allows you to use the import function in your node app.
