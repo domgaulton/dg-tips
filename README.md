@@ -35,6 +35,7 @@ Tips on all things FE
 - [Terminal](/TERMINAL/README.md)
 - [Three](/THREE/README.md)
 - [Twig](/TWIG/README.md)
+- [VS CODE](/VS_CODE/README.md)
 - [Webflow](/WEBFLOW/README.md)
 - [Yarn](/YARN/README.md)
 - [ZSH](/ZSH/README.md)
