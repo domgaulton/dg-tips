@@ -12,6 +12,7 @@ Tips on all things FE
 - [CSS](/CSS/README.md)
 - [CURL](/CURL/README.md)
 - [DOCKER](/DOCKER/README.md)
+- [DOPPLER](/DOPPLER/README.md)
 - [DRUPAL](/DRUPAL/README.md)
 - [DRUSH](/DRUSH/README.md)
 - [Easter Eggs](/EASTEREGGS/README.md)
