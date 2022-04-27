@@ -35,6 +35,7 @@ Tips on all things FE
 - [Sublime](/SUBLIME/README.md)
 - [Terminal](/TERMINAL/README.md)
 - [Three](/THREE/README.md)
+- [TypeScript](/TYPESCRIPT/README.md)
 - [Twig](/TWIG/README.md)
 - [VS CODE](/VS_CODE/README.md)
 - [Webflow](/WEBFLOW/README.md)
